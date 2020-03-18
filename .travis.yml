@@ -1,7 +1,5 @@
 services:
   - postgres
 addons:
-  postgres:
-    - 9.5
-    - 9.6
+  postgres: 9.6
 script: psql --version
