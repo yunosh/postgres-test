@@ -10,4 +10,8 @@ jobs:
         postgres: 10
     - addons:
         postgres: 11
+        apt:
+          packages:
+            - postgresql-11
+            - postgresql-client-11
 script: psql --version
