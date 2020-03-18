@@ -7,5 +7,7 @@ jobs:
     - addons:
         postgres: 9.6
     - addons:
-        postgres: 10.0
+        postgres: 10
+    - addons:
+        postgres: 12
 script: psql --version
