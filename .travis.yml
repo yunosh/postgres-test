@@ -1,0 +1,7 @@
+services:
+  - postgres
+addons:
+  postgres:
+    - 10.0
+    - 9.6
+script: psql -v
