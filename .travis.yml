@@ -17,7 +17,8 @@ jobs:
       env:
         - PGPORT=5433
 before_install:
-  - sudo cp /etc/postgresql/{9.6,11}/main/pg_hba.conf
+  - ls /etc/postgresql
+  - sudo cp /etc/postgresql/{10,11}/main/pg_hba.conf
   - sudo service postgresql restart 11
 before_script:
   - psql -c "create database test;" -U postgres
