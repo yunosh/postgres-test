@@ -18,6 +18,7 @@ jobs:
         - PGPORT=5433
 before_install:
   - ls /etc/postgresql
+  - sudo apt-get install -y postgresql-11 postgresql-client-11
   - sudo cp /etc/postgresql/{10,11}/main/pg_hba.conf
   - sudo service postgresql restart 11
 before_script:
